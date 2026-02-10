@@ -1,27 +1,17 @@
-package chapter8711;
+package chapter8712;
 
 public class Student {
-    private String id;
     private String name;
     private int age;
-    private String address;
-
-    public Student(String id, String name, int age, String address) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+    private String gender;
 
     public Student() {
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+    public Student(String name, int age, String gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
     }
 
     public String getName() {
@@ -40,11 +30,11 @@ public class Student {
         this.age = age;
     }
 
-    public String getAddress() {
-        return address;
+    public String getGender() {
+        return gender;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }
