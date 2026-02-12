@@ -1,17 +1,23 @@
-package chapter8712;
-
-import java.util.ArrayList;
+package chapter8715;
 
 public class Test {
     static void main(String[] args) {
-        ArrayList<Student> list=new ArrayList<>();
-        Student s1=new Student("赵子成",20,"男");
-        Student s2=new Student("赵兰成",200,"女");
-        Student s3=new Student("赵芳成",20,"男");
-        list.add(s1);
-        list.add(s2);
-        list.add(s3);
-        int max=Demo.getMax(list);
-        System.out.println("学生年龄最大的岁数为："+max+"岁");
+        Manager m=new Manager("1334","老六",15000,1500);
+        System.out.println(m.getId()+","+m.getName()+","+m.getSalary()+","+m.getBonus());
+        m.work();
+        m.eat();
+
+
+
+        Cook c=new Cook();
+        c.setId("1234");
+        c.setName("老八");
+        c.setSalary(1900);
+
+        System.out.println(c.getId()+","+c.getName()+","+c.getSalary());
+        c.eat();
+        c.work();
+
     }
+
 }
