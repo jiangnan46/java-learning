@@ -1,4 +1,4 @@
-package chapter8716;
+package chapter8719;
 
 public class Person {
     private String name;
@@ -26,8 +26,5 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
-    }
-    public void show(){
-        System.out.println(name+","+age);
     }
 }
